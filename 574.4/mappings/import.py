@@ -1,3 +1,7 @@
+'''
+Copied from http://reverseengineering.stackexchange.com/questions/11874/how-to-automatically-rename-some-ida-functions-from-a-given-list/11875
+'''
+
 import idaapi
 import idautils
 import idc
@@ -18,7 +22,7 @@ def do_rename(l):
 
 
 if __name__ == "__main__":
-    path = AskFile(0, "*", "Choose symbolize file.")
+    path = AskFile(0, "*", "Choose symbolization file.")
     f = open( path, "r")
     for l in f:
         do_rename(l)
