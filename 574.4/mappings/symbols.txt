@@ -60,3 +60,17 @@ ROM:3F8 read_aux_register_data
 ROM:400 write_aux_register_data
 ROM:408 write_domain_register_data
 ROM:410 write_tlb0
+ROM:5F0 load_and_jump_to_image
+ROM:6364 setup_restrictions
+ROM:62C4 setup_allowed_range
+ROM:6280 flag_load
+ROM:629C flag_check
+ROM:41CC parse_footer
+ROM:43CC decrypt_shsh_tag
+ROM:405C store_data_to_buffer
+ROM:473A KBAG_is_aes192
+ROM:4740 KBAG_is_aes256
+ROM:A24C __umodsi3
+ROM:A10C __divsi3
+ROM:9FFC _uidiv
+ROM:858 __ashldi3
